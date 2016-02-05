@@ -1,0 +1,28 @@
+<module rename-to="WebSmatch">
+	<inherits name="com.google.gwt.user.User"/>
+	<inherits name="com.google.gwt.user.theme.standard.Standard"/> -->
+	<!-- <inherits name='com.sensei.themes.inria.Inria'/> -->
+	<!-- <inherits name="com.google.gwt.user.theme.dark.Dark"/> -->
+	<inherits name="de.novanic.eventservice.GWTEventService"/>
+	<inherits name="com.google.gwt.resources.Resources"/>
+	<inherits name='com.google.gwt.widgetideas.GWTCanvas'/>
+	<inherits name="com.blogspot.qbeukes.gwt.html5canvas.HTML5Canvas"/>
+	<inherits name='com.googlecode.gchart.GChart'/>
+	<inherits name="com.google.gwt.xml.XML" />
+	
+  <inherits name='com.google.gwt.widgetideas.WidgetIdeas' />   
+  <inherits name='com.google.gwt.libideas.LibIdeas' />
+	
+	<!-- <inherits name='com.google.gwt.visualization.Visualization'/> -->
+	<entry-point class="org.inria.websmatch.gwt.spreadsheet.client.SpreadsheetViewer"/>
+	
+  <!-- Specify the paths for translatable code	-->
+	<source path='client'/>
+  
+	<servlet path="/UploadFileServlet" class="org.inria.websmatch.gwt.spreadsheet.server.UploadFileServlet"/>
+	<servlet path="/DownloadFileServlet" class="org.inria.websmatch.gwt.spreadsheet.server.DownloadFileServlet"/>
+	<stylesheet src="../SpreadsheetViewer.css" />
+
+  <!-- allow Super Dev Mode -->
+  <add-linker name="xsiframe"/>
+</module>

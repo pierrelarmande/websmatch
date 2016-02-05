@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<dspl targetNamespace="http://www.data-publica.com/geo" xmlns="http://schemas.google.com/dspl/2010"
+	xmlns:geo="http://www.google.com/publicdata/dataset/google/geo">
+
+	<import namespace="http://www.google.com/publicdata/dataset/google/geo" />
+
+	<info>
+		<name>
+			<value>Data Publica concepts géographiques</value>
+		</name>
+		<description>
+			<value>Concepts géographiques pour les jeux de données Data Publica.
+				La plupart proviennent de l'INSEE.
+			</value>
+		</description>
+	</info>
+	<provider>
+		<name>
+			<value>Data Publica</value>
+		</name>
+		<url>
+			<value>http://www.data-publica.com</value>
+		</url>
+	</provider>
+
+	<concepts>
+		<concept id="pays" extends="geo:location">
+			<info>
+				<name>
+					<value>Pays</value>
+				</name>
+			</info>
+			<table ref="pays_table" />
+		</concept>
+		<concept id="region" extends="geo:location">
+			<info>
+				<name>
+					<value>Région française</value>
+				</name>
+				<description>
+					<value>Structure la plus récente de l'administration locale
+						française, la région est devenue collectivité territoriale à la
+						suite des lois de décentralisation, le 16 mars 1986, date de la
+						première élection des conseillers régionaux élus au suffrage
+						universel; son existence a été consacrée par la révision
+						constitutionnelle du 28 mars 2003.
+						Les conseillers régionaux
+						élisent
+						le président du conseil régional qui
+						gère le budget, dirige
+						le
+						personnel et conduit la politique de la
+						région. Les compétences
+						propres de la région concernent
+						principalement l'aménagement du
+						territoire, le développement
+						économique, la formation
+						professionnelle, la construction ou
+						l'entretien des lycées, les
+						transports ferroviaires de voyageurs.
+						Il y a en France 26 régions
+						dont 5 d'outre-mer. La collectivité
+						territoriale de Corse est le
+						plus souvent assimilée à une région.
+					</value>
+				</description>
+				<url>
+					<value>http://insee.fr/fr/methodes/default.asp?page=definitions/region.htm
+					</value>
+				</url>
+			</info>
+			<property concept="country" isParent="true" />
+			<table ref="regions_table" />
+		</concept>
+		<concept id="departement" extends="geo:location">
+			<info>
+				<name>
+					<value>Département français</value>
+				</name>
+				<description>
+					<value>Création de la Révolution (loi du 22 décembre 1789), le
+						département devient collectivité locale autonome, avec un organe
+						délibérant et un exécutif élus, par la loi du 10 août 1871.Il est
+						géré par un conseil général élu pour 6 ans au suffrage universel,
+						qui élit à son tour un président, exécutif du département qui
+						prépare et exécute les délibérations du conseil général, gère le
+						budget et dirige le personnel.
+						Le département a de larges
+						compétences : action sociale,
+						construction
+						et entretien des
+						collèges, remembrement rural, organisation des
+						transports
+						scolaires,...
+						Depuis avril 2011, on compte 101 départements (dont 5
+						d'outre-mer).
+						Un département appartient à une région et une seule.
+						Chaque région
+						d'outre-mer n'est formée que d'un seul département.
+					</value>
+				</description>
+				<url>
+					<value>http://insee.fr/fr/methodes/default.asp?page=definitions/departement.htm
+					</value>
+				</url>
+
+			</info>
+			<property concept="region" isParent="true" />
+			<table ref="departements_table" />
+		</concept>
+		<concept id="commune" extends="geo:location">
+			<info>
+				<name>
+					<value>Commune française</value>
+				</name>
+				<description>
+					<value>La commune est la plus petite subdivision administrative
+						française mais c'est aussi la plus ancienne, puisqu'elle a succédé
+						aux villes et paroisses du Moyen Âge. Elle a été instituée en 1789
+						avant de connaître un début d'autonomie avec la loi du 5 avril
+						1884, véritable charte communale.
+						Le maire est l'exécutif de la
+						commune qu'il représente et dont il
+						gère le budget. Il est
+						l'employeur du personnel communal et exerce
+						les compétences de
+						proximité (écoles, urbanisme, action sociale,
+						voirie, transports
+						scolaires, ramassage des ordures ménagères,
+						assainissement...).
+						Il
+						est également agent de l'État pour les fonctions d'état civil,
+						d'ordre public, d'organisation des élections et de délivrance de
+						titres réglementaires.
+						Au 1er janvier 2010 on comptait 36 682
+						communes, dont 36 570 en
+						métropole. Sont venues s'y ajouter en
+						avril
+						les 17 communes de
+						Mayotte..
+					</value>
+				</description>
+				<url>
+					<value>http://www.insee.fr/fr/methodes/default.asp?page=definitions/commune.htm
+					</value>
+				</url>
+			</info>
+			<property concept="region" isParent="true" />
+			<table ref="commune_table" />
+		</concept>
+		<concept id="iris" extends="geo:location">
+			<info>
+				<name>
+					<value>IRIS</value>
+				</name>
+				<description>
+					<value>Les communes d'au moins 10 000 habitants et la plupart des
+						communes de 5 000 à 10 000 habitants sont découpées en IRIS. Ce
+						découpage, maille de base de la diffusion de statistiques
+						infra-communales, constitue une partition du territoire de ces
+						communes en "quartiers" dont la population est de l'ordre de 2 000
+						habitants. La France compte environ 16 000 IRIS dont 650 pour les
+						DOM.
+						Par extension, afin de couvrir l'ensemble du territoire, on
+						assimile
+						à un IRIS chacune des communes non découpées en IRIS.
+						Ce
+						découpage a été élaboré en partenariat avec les interlocuteurs
+						locaux, notamment les communes, selon des règles précises définies
+						en concertation avec la Commission Nationale Informatique et
+						Libertés (CNIL). Il est construit à partir de critères
+						géographiques et statistiques et, autant que possible, chaque IRIS
+						doit être homogène du point de vue de l'habitat. Les IRIS offrent
+						l'outil le plus élaboré à ce jour pour décrire la structure
+						interne de près de 1 900 communes d'au moins 5 000 habitants.
+					</value>
+				</description>
+				<url>
+					<value>http://www.insee.fr/fr/methodes/default.asp?page=zonages/iris.htm
+					</value>
+				</url>
+			</info>
+			<property concept="commune" isParent="true" />
+			<table ref="iris_table" />
+		</concept>
+		<concept id="zoneEmploi" extends="geo:location">
+			<info>
+				<name>
+					<value>Zone d'Emploi</value>
+				</name>
+				<description>
+					<value>Une zone d'emploi est un espace géographique à l'intérieur
+						duquel la plupart des actifs résident et travaillent, et dans
+						lequel les établissements peuvent trouver l'essentiel de la main
+						d'œuvre nécessaire pour occuper les emplois offerts.
+						Le découpage
+						en zones d'emploi constitue une partition du territoire
+						adaptée aux
+						études locales sur le marché du travail. Le zonage
+						définit aussi
+						des territoires pertinents pour les diagnostics
+						locaux et peut
+						guider la délimitation de territoires pour la mise
+						en œuvre des
+						politiques territoriales initiées par les pouvoirs
+						publics ou les
+						acteurs locaux. Ce zonage est défini à la fois pour
+						la France
+						métropolitaine et les DOM.
+						Le découpage actualisé se fonde sur les
+						flux de déplacement
+						domicile-travail des actifs observés lors du
+						recensement de 2006.
+						La liste des communes est celle donnée par le
+						Code Officiel
+						Géographique (COG) au 01/01/2010.
+					</value>
+				</description>
+				<url>
+					<value>http://insee.fr/fr/methodes/default.asp?page=zonages/zones_emploi.htm
+					</value>
+				</url>
+			</info>
+			<table ref="zoneEmploi_table" />
+		</concept>
+		<concept id="bassinEmploi" extends="geo:location">
+			<info>
+				<name>
+					<value>Bassin d'Emploi</value>
+				</name>
+				<description>
+					<value>Cette notion de bassin d’emploi fait référence au découpage
+						administratif de Pôle emploi et peut couvrir le territoire d’une
+						ou plusieurs agences. Ainsi, pour l’enquête BMO 2012, il y avait
+						386 bassins d’emploi.
+					</value>
+				</description>
+				<url>
+					<value>http://bmo.pole-emploi.org/?nav=bmo
+					</value>
+				</url>
+			</info>
+			<table ref="bassinEmploi_table" />
+		</concept>
+		<concept id="arrondissementMunicipal" extends="geo:location">
+			<info>
+				<name>
+					<value>Arrondissement Municipal</value>
+				</name>
+				<description>
+					<value>L'arrondissement municipal n'existe que pour Paris, Lyon et
+						Marseille. Le but de la politique de décentralisation des services
+						administratifs en 1982 consistait à rapprocher les administrations
+						municipales du citoyen et à déconcentrer la gestion des trois plus
+						grandes communes sans pour autant remettre en cause leur unité. La
+						déconcentration ainsi souhaitée fut réalisée en donnant certaines
+						compétences à un conseil et un maire élu. Ces arrondissements et
+						leur conseil coexistent cependant avec un conseil municipal qui
+						maintient l'unité communale de la ville.
+					</value>
+				</description>
+				<url>
+					<value>http://insee.fr/fr/methodes/default.asp?page=definitions/arrondissement-municipal.htm
+					</value>
+				</url>
+			</info>
+			<property concept="commune" isParent="true" />
+			<table ref="arrondissementMunicipal_table" />
+		</concept>
+	</concepts>
+
+	<tables>
+		<table id="pays_table">
+			<column id="country" type="string" />
+			<column id="latitude" type="float" />
+			<column id="longitude" type="float" />
+			<column id="name" type="string" />
+			<data>
+				<file format="csv" encoding="utf-8">pays.csv</file>
+			</data>
+		</table>
+		<table id="regions_table">
+			<column id="region" type="string" />
+			<column id="name" type="string" />
+			<column id="latitude" type="float" />
+			<column id="longitude" type="float" />
+			<column id="country" type="string" />
+			<data>
+				<file format="csv" encoding="utf-8">regions.csv</file>
+			</data>
+		</table>
+		<table id="departements_table">
+			<column id="departement" type="string" />
+			<column id="name" type="string" />
+			<column id="latitude" type="float" />
+			<column id="longitude" type="float" />
+			<column id="region" type="string" />
+			<data>
+				<file format="csv" encoding="utf-8">departements.csv</file>
+			</data>
+		</table>
+		<table id="commune_table">
+			<column id="commune" type="string" />
+			<column id="name" type="string" />
+			<column id="latitude" type="float" />
+			<column id="longitude" type="float" />
+			<column id="departement" type="string" />
+			<data>
+				<file format="csv" encoding="utf-8">communes.csv</file>
+			</data>
+		</table>
+		<table id="iris_table">
+			<column id="iris" type="string" />
+			<column id="name" type="string" />
+			<column id="latitude" type="float" />
+			<column id="longitude" type="float" />
+			<column id="commune" type="string" />
+			<data>
+				<file format="csv" encoding="utf-8">iris.csv</file>
+			</data>
+		</table>
+		<table id="zoneEmploi_table">
+			<column id="code" type="string" />
+			<column id="name" type="string" />
+			<column id="latitude" type="float" />
+			<column id="longitude" type="float" />
+			<data>
+				<file format="csv" encoding="utf-8">zone-emploi.csv</file>
+			</data>
+		</table>
+		<table id="bassinEmploi_table">
+			<column id="code" type="string" />
+			<column id="name" type="string" />
+			<column id="latitude" type="float" />
+			<column id="longitude" type="float" />
+			<data>
+				<file format="csv" encoding="utf-8">bassin-emploi.csv</file>
+			</data>
+		</table>
+		<table id="arrondissementMunicipal_table">
+			<column id="code" type="string" />
+			<column id="name" type="string" />
+			<column id="latitude" type="float" />
+			<column id="longitude" type="float" />
+			<column id="codeCommune" type="string" />
+			<data>
+				<file format="csv" encoding="utf-8">arrondissements-municipaux.csv</file>
+			</data>
+		</table>
+	</tables>
+</dspl>

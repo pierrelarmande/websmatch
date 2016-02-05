@@ -1,0 +1,8 @@
+<xml>
+<dbuser>matcher</dbuser>
+<pass>matcher</pass>
+<!-- <dbHost>193.49.106.32</dbHost> dev ip --> 
+<dbHost>localhost</dbHost>
+<dbPort>3306</dbPort>
+<dbName>matching_results</dbName>
+</xml>

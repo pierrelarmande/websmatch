@@ -1,0 +1,506 @@
+.gwt-TabLayoutPanel
+{
+    height: 100%;
+}
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTabs
+{
+	padding-top: 30px;
+	background-color: lightgrey;}
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab
+{
+	background: #a4a4a4;
+    float: left;
+	color: White;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	border-top: thin lightgrey;
+	border-right: thin lightgrey;
+	border-left: thin lightgrey;
+	font-variant: normal;
+	font-size: small;
+	font-style: italic;
+	font-weight: normal;
+	background-color: dimgrey;
+}
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab-selected
+{
+    background: #8d8d8d;
+	color: Black;
+	font-variant: normal;
+	font-style: normal;
+	font-weight: bold;
+	background-color: White;
+}
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTabInner
+{
+}
+
+.gwt-TabLayoutPanelContentContainer {
+	border-width: 0px;
+}
+
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelContent {
+	overflow: hidden;
+	padding: 6px;
+	border-top: 0px solid lightgrey;
+	border-right: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+	border-left: 1px solid lightgrey;
+}
+
+.gwt-SplitLayoutPanel-HDragger {
+	background: lightgrey url(splitPanelThumb.png) center center no-repeat;
+	cursor: col-resize;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.errorCell{
+	color: red;
+}
+
+.titleCell{
+	color: white;
+	border: 0px;
+	font-weight: bold;
+	background-color: tomato;
+}
+
+.attributeCell{
+	color: white;
+	font-weight: bold;
+	background-color: lightslategray;
+	border: 0px;
+}
+
+.topTableCell{
+border-top: 3px solid black;
+}
+
+.rightTableCell{
+border-right: 3px solid black;
+}
+
+.leftTableCell{
+border-left: 3px solid black;
+}
+
+.bottomTableCell{
+border-bottom: 3px solid black;
+}
+
+.body {
+	background-color: white;
+}
+
+.a {	
+	color: lightblue;
+}
+
+.a:visited {	
+	color: darkblue; 
+}
+
+.chart {
+	display: block;
+	float: left;
+	width: 300; 
+}
+
+.spreadsheetTable { border-collapse: collapse; }
+
+.spreadsheetTable td { border: 1px solid black; } 
+
+.spreadsheetTable tr { border: 1px solid black; } 
+
+.whiteCell {
+	background-color: white;
+}
+
+.gwt-ProgressBar-shell {
+  height: 14pt;
+  width: 100%;
+	border-top: 0px solid #faf9f7;
+	border-right: 0px solid #848280;
+	border-bottom: 0px solid #848280;
+	border-left: 0px solid #faf9f7;
+	background-color: #DDDDDD;
+}
+.gwt-ProgressBar-shell .gwt-ProgressBar-bar {
+	background-color: lightblue;
+}
+.gwt-ProgressBar-shell .gwt-ProgressBar-text {
+	color: Black;
+	margin: 0px;
+	padding: 0px;
+}
+
+.connexAndAttr {
+	background-color: orange;
+}
+
+.connex {
+	background-color: red;
+}
+
+.yellowText {
+	background-color: yellow;
+}
+
+.cells {
+	background-color: #C3D9FF;
+}
+
+.cellsAlternate {
+	background-color: #C3D9DD;
+}
+
+.scrollButton {
+	margin: 8px;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-DialogBox {
+	border: 2px solid #AAAAAA;
+	background-color: white;
+}
+
+.gwt-DialogBox .Caption {
+	background-image: url(gray_gradient.gif);
+	background-repeat: repeat-x;
+	padding: 4px;
+	padding-bottom: 8px;
+	font-weight: bold;
+	cursor: default;
+}
+
+.gwt-MenuBar {
+	/*background-color: #C3D9FF;*/
+	cursor: default;
+}
+
+.gwt-MenuItem {
+	font-size: 80%;
+	margin: 1px;
+	cursor: default;
+}
+
+.gwt-MenuItem-selected {
+	background-color: #E8EEF7;
+}
+
+.gwt-Tree {
+	text-align: left;
+}
+
+.gwt-Tree .gwt-TreeItem {
+	font-size: 80%;
+	cursor: default;
+}
+
+.gwt-Tree .gwt-TreeItem-selected {
+	background-color: #C3D9FF;
+}
+
+.gwt-StackPanel {
+	background-color: white;
+	border: 1px solid #AAAAAA;
+	width: 15em;
+}
+
+.gwt-StackPanel .gwt-StackPanelItem {
+	background-image: url(blue_gradient.gif);
+	background-repeat: repeat-x;
+	background-color: #EEEEEE;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-StackPanel .gwt-StackPanelItem-selected {
+}
+
+.gwt-TabPanel {
+	
+}
+
+.gwt-TabPanelBottom {
+	/*border-left: 1px solid #87b3ff;
+	border-right: 1px solid #87b3ff;
+	border-bottom: 1px solid #87b3ff;*/
+}
+
+.gwt-TabBar {
+	font-size: smaller;
+}
+
+.gwt-TabBar .gwt-TabBarFirst {
+	height: 100%;
+	/*border-bottom: 1px solid #87b3ff;
+	border-right: 1px solid #87b3ff;*/
+	padding-left: 3px;
+}
+
+.gwt-TabBar .gwt-TabBarRest {
+	/*border-bottom: 1px solid #87b3ff;*/
+	padding-right: 3px;
+}
+
+.gwt-TabBar .gwt-TabBarItem-selected {
+	font-weight: bold;
+	background-color: #e8eef7;
+	/*border-top: 1px solid #87b3ff;
+	border-right: 1px solid #87b3ff;
+	border-bottom: 1px solid #e8eef7;*/
+	padding: 2px;
+	cursor: default;
+	white-space: nowrap;
+}
+
+.gwt-PushButton-up {
+  background-color: #C3D9FF;
+  padding: 2px;
+  border: 2px solid transparent;
+  border-color: #E8F1FF rgb(157, 174, 205) rgb(157, 174, 205) rgb(232, 241, 255);
+  cursor: pointer;
+  cursor: hand;
+}
+
+.gwt-PushButton-up-hovering {
+  background-color: #C3D9FF;
+  padding: 2px;
+  border: 2px solid transparent;
+  border-color: #E8F1FF rgb(157, 174, 205) rgb(157, 174, 205) rgb(232, 241, 255);
+  cursor: pointer;
+  cursor: hand;
+}
+
+.gwt-PushButton-down {
+  background-color: #C3D9FF;
+  padding: 2px;
+  border: 2px solid transparent;
+  border-color: #9DAECD rgb(232, 241, 255) rgb(232, 241, 255) rgb(157, 174, 205);
+  cursor: pointer;
+  cursor: hand;
+}
+
+.gwt-PushButton-down-hovering {
+  background-color: #C3D9FF;
+  padding: 2px;
+  border: 2px solid transparent;
+  border-color: #9DAECD rgb(232, 241, 255) rgb(232, 241, 255) rgb(157, 174, 205);
+  cursor: pointer;
+  cursor: hand;
+}
+
+.gwt-ToggleButton-up {
+  background-color: #C3D9FF;
+  padding: 2px;
+  border: 2px solid transparent;
+  border-color: #E8F1FF rgb(157, 174, 205) rgb(157, 174, 205) rgb(232, 241, 255);
+  cursor: pointer;
+  cursor: hand;
+}
+
+.gwt-ToggleButton-up-hovering {
+  background-color: #C3D9FF;
+  padding: 2px;
+  border: 2px solid transparent;
+  border-color: #E8F1FF rgb(157, 174, 205) rgb(157, 174, 205) rgb(232, 241, 255);
+  cursor: pointer;
+  cursor: hand;
+}
+
+.gwt-ToggleButton-down {
+  background-color: #C3D9FF;
+  padding: 2px;
+  background-color: #E8F1FF;
+  border: 2px solid transparent;
+  border-color: #9DAECD rgb(232, 241, 255) rgb(232, 241, 255) rgb(157, 174, 205);
+  cursor: pointer;
+  cursor: hand;
+}
+
+.gwt-ToggleButton-down-hovering {
+  background-color: #C3D9FF;
+  padding: 2px;
+  background-color: #E8F1FF;
+  border: 2px solid transparent;
+  border-color: #9DAECD rgb(232, 241, 255) rgb(232, 241, 255) rgb(157, 174, 205);
+  cursor: pointer;
+  cursor: hand;
+}
+
+.gwt-RichTextArea {
+  border: 1px solid black;
+  background-color: white;
+}
+
+.gwt-RichTextToolbar {
+  background-color: #C3D9FF;
+  padding: 2px;
+}
+
+.gwt-RichTextToolbar .gwt-PushButton-up {
+  margin-right: 2px;
+  border: 1px solid #C3D9FF;
+}
+
+.gwt-RichTextToolbar .gwt-PushButton-up-hovering {
+  margin-right: 2px;
+  border: 1px solid #C3D9FF;
+  border-color: #E8F1FF rgb(157, 174, 205) rgb(157, 174, 205) rgb(232, 241, 255);
+}
+
+.gwt-RichTextToolbar .gwt-PushButton-down {
+  margin-right: 2px;
+  border: 1px solid #C3D9FF;
+  border-color: #9DAECD rgb(232, 241, 255) rgb(232, 241, 255) rgb(157, 174, 205);
+}
+
+.gwt-RichTextToolbar .gwt-PushButton-down-hovering {
+  margin-right: 2px;
+  border: 1px solid #C3D9FF;
+  border-color: #9DAECD rgb(232, 241, 255) rgb(232, 241, 255) rgb(157, 174, 205);
+}
+
+.gwt-RichTextToolbar .gwt-ToggleButton-up {
+  margin-right: 2px;
+  border: 1px solid #C3D9FF;
+}
+
+.gwt-RichTextToolbar .gwt-ToggleButton-up-hovering {
+  margin-right: 2px;
+  border: 1px solid #C3D9FF;
+  border-color: #E8F1FF rgb(157, 174, 205) rgb(157, 174, 205) rgb(232, 241, 255);
+}
+
+.gwt-RichTextToolbar .gwt-ToggleButton-down {
+  margin-right: 2px;
+  background-color: #E8F1FF;
+  border: 1px solid #C3D9FF;
+  border-color: #9DAECD rgb(232, 241, 255) rgb(232, 241, 255) rgb(157, 174, 205);
+}
+
+.gwt-RichTextToolbar .gwt-ToggleButton-down-hovering {
+  margin-right: 2px;
+  background-color: #E8F1FF;
+  border: 1px solid #C3D9FF;
+  border-color: #9DAECD rgb(232, 241, 255) rgb(232, 241, 255) rgb(157, 174, 205);
+}
+
+.gwt-HorizontalSplitPanel {
+	border: 8px solid #C3D9FF;
+}
+
+.gwt-HorizontalSplitPanel .splitter {
+	background-color: #C3D9FF;
+	cursor: move;
+}
+
+.gwt-HorizontalSplitPanel .left {
+  background-color: #E8EEF7;
+}
+
+.gwt-VerticalSplitPanel {
+	border: 8px solid #C3D9FF;
+}
+
+.gwt-VerticalSplitPanel .splitter {
+	height: 8px;
+	background-color: dimgrey;
+	cursor: move;
+}
+
+.gwt-SuggestBoxPopup {
+	border: 2px solid #C3D9FF;
+}
+
+.gwt-SuggestBoxPopup .item {
+	padding: 2px;
+}
+
+.gwt-SuggestBoxPopup .item-selected {
+	background-color: #C3D9FF;
+	padding: 2px;
+}
+
+.gwt-DisclosurePanel {
+	border: 2px solid #C3D9FF;
+}
+
+.gwt-DisclosurePanel .header {
+	background-color: #e8eef7;
+	cursor: hand;
+}
+.centerFp {
+	margin: auto;
+}
+.loginPanel {
+	margin: auto;
+	padding: 1px;
+	/*border-top: thin outset cornflowerblue;
+	border-right: thin inset cornflowerblue;
+	border-bottom: thin inset cornflowerblue;
+	border-left: thin outset cornflowerblue;*/
+	font-stretch: normal;
+	font-variant: normal;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	background-color: aliceblue;
+	background-repeat: repeat-x;
+	background-image: url(blue_gradient.gif);
+	table-layout: auto;
+}
+.loginPanel-Title {
+	margin: auto;
+	padding: 1px;
+	font-variant: small-caps;
+	font-size: large;
+	font-weight: bold;
+	vertical-align: middle;
+	text-align: center;
+	background-color: aliceblue;
+	background-repeat: repeat-x;
+	background-image: url(blue_gradient.gif);
+	table-layout: auto;
+}
+.selectedSheetCell {
+	font-weight: bold;
+	text-decoration: blink;
+}
+.gwt-Label-info {
+	font-size: smaller;
+	font-style: italic;
+}
+.commentCell {
+	color: white;
+	border: 0px;
+	font-weight: bold;
+	background-color: darkgrey;
+}
+.mergedCell {
+	background-color: cornflowerblue;
+}
+.editedXLSSchema {
+	font-weight: bold;
+}
+.onTop {
+	z-index : 4;
+}
+.center {
+	align: center;
+	text-align: center;
+}
+.left {
+	align: left;
+	text-align: left;
+}
+

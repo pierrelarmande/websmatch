@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>SpreadsheetViewer.html</welcome-file>
+  </welcome-file-list>
+
+
+  <context-param>
+    <param-name>xlsStorageDir</param-name>
+    <param-value>/temp</param-value>
+    <!-- <param-value>/usr/local/tomcat/xls</param-value> -->
+    <description>Storage directory for XLS parsed files</description>
+  </context-param>
+  
+  <context-param>
+    <param-name>schemaStoreService</param-name>
+    <!-- <param-value>http://193.49.106.32:8080/SchemaStore/services/SchemaStore</param-value> -->
+    <!-- constraint <param-value>http://localhost/SchemaStore/services/SchemaStore</param-value> -->
+    <!-- <param-value>http://localhost:8080/SchemaStore/services/SchemaStore</param-value> -->
+    <param-value>http://constraint.lirmm.fr/SchemaStore/services/SchemaStore</param-value>
+    <description>URL for Schema Store web service</description>
+  </context-param>
+  
+  <context-param>
+    <param-name>appList</param-name>
+    <param-value>ClusterViewer;ResultsViewer;XLSComparator;SchemaViewer</param-value>
+    <description>List of enabled applications</description>
+  </context-param>
+
+  <!-- servlets -->
+  <servlet>
+    <servlet-name>SpreadsheetParsingService</servlet-name>
+    <servlet-class>org.inria.websmatch.gwt.spreadsheet.server.SpreadsheetParsingServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SpreadsheetParsingService</servlet-name>
+    <url-pattern>/WebSmatch/SpreadsheetParsingService</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MatchingService</servlet-name>
+    <servlet-class>org.inria.websmatch.gwt.spreadsheet.server.MatchingServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MatchingService</servlet-name>
+    <url-pattern>/WebSmatch/MatchingService</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UploadFileServlet</servlet-name>
+    <servlet-class>org.inria.websmatch.gwt.spreadsheet.server.UploadFileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadFileServlet</servlet-name>
+    <url-pattern>/WebSmatch/UploadFileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>downloadFileServlet</servlet-name>
+    <servlet-class>org.inria.websmatch.gwt.spreadsheet.server.DownloadFileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>downloadFileServlet</servlet-name>
+    <url-pattern>/WebSmatch/DownloadFileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>jUnitHostImpl</servlet-name>
+    <servlet-class>com.google.gwt.junit.server.JUnitHostImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>jUnitHostImpl</servlet-name>
+    <url-pattern>/WebSmatch/junithost/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoginService</servlet-name>
+    <servlet-class>org.inria.websmatch.gwt.spreadsheet.server.LoginServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginService</servlet-name>
+    <url-pattern>/WebSmatch/LoginService</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MachineLearningService</servlet-name>
+    <servlet-class>org.inria.websmatch.gwt.spreadsheet.server.MachineLearningServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MachineLearningService</servlet-name>
+    <url-pattern>/WebSmatch/MachineLearningService</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EnabledApplicationService</servlet-name>
+    <servlet-class>org.inria.websmatch.gwt.spreadsheet.server.EnabledApplicationServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EnabledApplicationService</servlet-name>
+    <url-pattern>/WebSmatch/EnabledApplicationService</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SchemaService</servlet-name>
+    <servlet-class>org.inria.websmatch.gwt.spreadsheet.server.SchemaServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchemaService</servlet-name>
+    <url-pattern>/WebSmatch/SchemaService</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ClusteringService</servlet-name>
+    <servlet-class>org.inria.websmatch.gwt.spreadsheet.server.ClusteringServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClusteringService</servlet-name>
+    <url-pattern>/WebSmatch/ClusteringService</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DetectionQualityService</servlet-name>
+    <servlet-class>org.inria.websmatch.gwt.spreadsheet.server.DetectionQualityServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DetectionQualityService</servlet-name>
+    <url-pattern>/WebSmatch/DetectionQualityService</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>remoteLoggingServiceImpl</servlet-name>
+    <servlet-class>com.google.gwt.libideas.logging.server.RemoteLoggingServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>remoteLoggingServiceImpl</servlet-name>
+    <url-pattern>/WebSmatch/logging</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>eventServiceImpl</servlet-name>
+    <servlet-class>de.novanic.eventservice.service.EventServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>eventServiceImpl</servlet-name>
+    <url-pattern>/WebSmatch/gwteventservice</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>GetLoadersService</servlet-name>
+    <servlet-class>org.inria.websmatch.gwt.spreadsheet.server.GetLoadersServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetLoadersService</servlet-name>
+    <url-pattern>/WebSmatch/GetLoadersService</url-pattern>
+  </servlet-mapping>
+
+
+  <!-- for debug: list registered servlet -->
+  <servlet>
+    <servlet-name>ServletList</servlet-name>
+    <servlet-class>org.inria.websmatch.debug.ServletList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletList</servlet-name>
+    <url-pattern>/WebSmatch/ServletList</url-pattern>
+  </servlet-mapping>
+
+</web-app>
